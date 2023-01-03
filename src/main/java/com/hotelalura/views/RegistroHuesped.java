@@ -20,17 +20,17 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import java.awt.Font;
 import javax.swing.ImageIcon;
-import javax.swing.JButton;
+//import javax.swing.JButton;
 import java.awt.SystemColor;
-import java.awt.event.ActionListener;
+//import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
-import java.sql.Date;
-import java.text.DateFormat;
+//import java.sql.Date;
+//import java.text.DateFormat;
 import java.text.Format;
 import java.text.SimpleDateFormat;
-import java.awt.event.ActionEvent;
+//import java.awt.event.ActionEvent;
 import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
@@ -45,7 +45,7 @@ public class RegistroHuesped extends JFrame {
 	private ReservaController controllerReserva = null;
 	private HuespedController huespedController = null;
 	
-	private Integer reservaID;
+//	private Integer reservaID;
 	private Reserva reservaOBJ;
 	
 
@@ -365,7 +365,7 @@ public class RegistroHuesped extends JFrame {
 //
 //	------->     GUARDA EL REGISTRO DE 'Reserva' y 'Huesped'
 //								
-				System.out.println("GUARDAR");
+//				System.out.println("GUARDAR");
 
 				if (
 					txtNombre.getText() != "" &&

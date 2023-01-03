@@ -8,8 +8,6 @@ import javax.swing.border.EmptyBorder;
 import com.hotelalura.controller.LoginController;
 import com.hotelalura.models.Funcionario;
 
-import clasesUtilitarias.InterfaceNombreUsuario;
-import clasesUtilitarias.NombreLogin;
 
 import java.awt.Color;
 import javax.swing.JLabel;

@@ -5,9 +5,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 import com.hotelalura.models.Funcionario;
-import com.mysql.cj.x.protobuf.MysqlxPrepare.Prepare;
-
-
 
 
 public class LoginDAO implements InterfaceLogin {
@@ -46,9 +43,6 @@ public class LoginDAO implements InterfaceLogin {
 					while (resultado.next()) {
 						pass = (String) resultado.getString(1);					
 					}
-					
-					System.out.println(funcionario);
-					System.out.println(pass);
 					
 					if (funcionario.getPassword().equals(pass)) {
 						return true;

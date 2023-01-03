@@ -14,20 +14,19 @@ import com.toedter.calendar.JDateChooser;
 import com.hotelalura.models.Funcionario;
 import com.hotelalura.models.Reserva;
 
-import com.toedter.calendar.JCalendar;
 
 import java.awt.Font;
 import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
 import java.text.Format;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
+//import java.util.Calendar;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 import java.awt.Toolkit;
-import java.awt.datatransfer.Clipboard;
-import java.awt.datatransfer.StringSelection;
+//import java.awt.datatransfer.Clipboard;
+//import java.awt.datatransfer.StringSelection;
 import java.beans.PropertyChangeListener;
 import java.sql.Date;
 import java.beans.PropertyChangeEvent;
@@ -46,6 +45,7 @@ public class ReservasView extends JFrame {
 	private Double tarifa = 0d;
 	
 	private static Date fecha = new Date(System.currentTimeMillis());
+	@SuppressWarnings("deprecation")
 	private static Date fechaFormatoAhora = new Date(fecha.getYear(), fecha.getMonth(), fecha.getDate());
 	
 		
@@ -151,7 +151,7 @@ public class ReservasView extends JFrame {
 
 		
 		txtFechaE.addPropertyChangeListener(new PropertyChangeListener() {
-			@SuppressWarnings("deprecation")
+//			@SuppressWarnings("deprecation")
 			public void propertyChange(PropertyChangeEvent evt) {
 // Activa el evento, después del usuario seleccionar las fechas se debe calcular el valor de la reserva
 				txtFechaE.setBackground(Color.WHITE);
@@ -218,7 +218,7 @@ public class ReservasView extends JFrame {
 		txtFechaS.setFont(new Font("Roboto", Font.PLAIN, 18));
 
 		txtFechaS.addPropertyChangeListener(new PropertyChangeListener() {
-			@SuppressWarnings("deprecation")
+//			@SuppressWarnings("deprecation")
 			public void propertyChange(PropertyChangeEvent evt) {
 
 // Activa el evento, después del usuario seleccionar las fechas se debe calcular el valor de la reserva

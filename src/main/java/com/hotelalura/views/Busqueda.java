@@ -6,27 +6,25 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 
-import com.google.protobuf.Option;
 import com.hotelalura.controller.BusquedaController;
-import com.hotelalura.dao.BusquedaDAO;
 import com.hotelalura.models.Funcionario;
 import com.hotelalura.models.Huesped;
 import com.hotelalura.models.Reserva;
 
 import javax.swing.JTable;
 import javax.swing.JTextField;
-import javax.swing.JButton;
+//import javax.swing.JButton;
 import javax.swing.ImageIcon;
 import java.awt.Color;
-import java.awt.SystemColor;
+//import java.awt.SystemColor;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 import java.awt.Font;
-import java.awt.event.ActionListener;
+//import java.awt.event.ActionListener;
 import java.util.List;
 import java.util.Optional;
-import java.awt.event.ActionEvent;
+//import java.awt.event.ActionEvent;
 import javax.swing.JTabbedPane;
 import java.awt.Toolkit;
 import javax.swing.SwingConstants;
@@ -34,9 +32,9 @@ import javax.swing.JSeparator;
 import javax.swing.ListSelectionModel;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
+//import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionAdapter;
-import java.lang.reflect.UndeclaredThrowableException;
+//import java.lang.reflect.UndeclaredThrowableException;
 
 
 
@@ -50,7 +48,7 @@ public class Busqueda extends JFrame {
 	
 
 	private JPanel contentPane;
-	private JTextField txtBuscar, txtLimpiarBuscar;
+	private JTextField txtBuscar;//, txtLimpiarBuscar;
 	private JTable tbHuespedes;
 	private JTable tbReservas;
 	private DefaultTableModel modeloR;
@@ -305,6 +303,7 @@ public class Busqueda extends JFrame {
 		
 		JPanel btnbuscar = new JPanel();
 		btnbuscar.addMouseListener(new MouseAdapter() {
+			@SuppressWarnings("unchecked")
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				
@@ -343,11 +342,11 @@ public class Busqueda extends JFrame {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				
-				System.out.println("EDITAR");
+//				System.out.println("EDITAR");
 				
 				if (tbHuespedes.getSelectedColumnCount() > 0 && tbHuespedes.getSelectedRowCount() > 0) {
 					
-					System.out.println("TABLA HUESPEDES");
+//					System.out.println("TABLA HUESPEDES");
 					
 					Optional.ofNullable(tbHuespedes.getValueAt(tbHuespedes.getSelectedRow(), tbHuespedes.getSelectedColumn())).ifPresentOrElse(fila -> {
 						
@@ -390,7 +389,7 @@ public class Busqueda extends JFrame {
 					}, null);
 
 				} else if (tbReservas.getSelectedColumnCount() > 0 && tbReservas.getSelectedRowCount() > 0) {
-					System.out.println("TABLA RESERVAS");
+//					System.out.println("TABLA RESERVAS");
 						
 					Optional.ofNullable(tbReservas.getValueAt(tbReservas.getSelectedRow(), tbReservas.getSelectedColumn())).ifPresentOrElse(fila -> {
 						
@@ -453,7 +452,7 @@ public class Busqueda extends JFrame {
 				// TODO Auto-generated method stub
 				if (tbHuespedes.getSelectedColumnCount() > 0 && tbHuespedes.getSelectedRowCount() > 0) {
 					
-					System.out.println("TABLA HUESPEDES");
+//					System.out.println("TABLA HUESPEDES");
 
 					Optional.ofNullable(tbHuespedes.getValueAt(tbHuespedes.getSelectedRow(), tbHuespedes.getSelectedColumn())).ifPresentOrElse(fila -> {
 						
@@ -481,7 +480,7 @@ public class Busqueda extends JFrame {
 					}, null);
 
 				} else if (tbReservas.getSelectedColumnCount() > 0 && tbReservas.getSelectedRowCount() > 0) {
-					System.out.println("TABLA RESERVAS");
+//					System.out.println("TABLA RESERVAS");
 						
 					Optional.ofNullable(tbReservas.getValueAt(tbReservas.getSelectedRow(), tbReservas.getSelectedColumn())).ifPresentOrElse(fila -> {
 						

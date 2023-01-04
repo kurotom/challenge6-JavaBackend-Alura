@@ -14,8 +14,9 @@ El proyecto sigue el patrón de diseño MVC.
 Escrito en Java, utilizando Java Swing para entorno GUI, base de datos MySQL para almacenar los datos manejados.
 
 
+![Challenge 6 IMG](https://img.youtube.com/vi/4wzjR7SQux4/hqdefault.jpg "Challenge 6")
+
 <p align="center">
-	![Challenge 6 IMG](https://img.youtube.com/vi/4wzjR7SQux4/hqdefault.jpg "Challenge 6")
 	[URL](https://youtu.be/4wzjR7SQux4)
 </p>
 

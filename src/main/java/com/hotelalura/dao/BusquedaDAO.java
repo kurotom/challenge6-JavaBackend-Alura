@@ -223,8 +223,7 @@ public class BusquedaDAO implements InterfaceBusqueda {
 
 		try {
 			
-			String querySearch = "SELECT * FROM huespedes h, reservas r WHERE r.id = h.idreserva AND CONCAT(h.nombre, h.apellido, h.fechanacimiento, h.nacionalidad, h.telefono,\n"
-					+ "h.idreserva, r.id, r.fechaentrada, r.fechasalida, r.valor, r.formapago) LIKE ?;";
+			String querySearch = "SELECT * FROM huespedes h, reservas r WHERE r.id = h.idreserva AND CONCAT(h.apellido, h.idreserva, r.id) LIKE ?;";
 			
 			PreparedStatement sentencia = this.connection.prepareStatement(querySearch);
 			

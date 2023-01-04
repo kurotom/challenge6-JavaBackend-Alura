@@ -271,6 +271,8 @@ public class Login extends JFrame {
 				
 				if (permitLogin) {
 					//     MENU USUARIO
+					
+					loginController.closeAndDestroy();
 					MenuUsuario menu = new MenuUsuario(funcionario);
 					
 //					MenuUsuario menu = new MenuUsuario();

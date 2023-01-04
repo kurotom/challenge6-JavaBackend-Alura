@@ -60,9 +60,6 @@ public class MenuUsuario extends JFrame {
 	public MenuUsuario(Funcionario funcionario) {
 		String nombreUsuarioAdmin = nameTitleFormatted(funcionario.getNombre());
 		
-//	public MenuUsuario() {
-		
-		
 		
 		setIconImage(Toolkit.getDefaultToolkit().getImage(MenuUsuario.class.getResource("/com/hotelalura/imagenes/aH-40px.png")));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -262,8 +259,9 @@ public class MenuUsuario extends JFrame {
 	    lblNewLabel_3_2.setBounds(312, 520, 295, 27);
 	    contentPane.add(lblNewLabel_3_2);
 	
-	    
-	    JLabel lblNewLabel_4 = new JLabel(nombreUsuarioAdmin);
+
+	    JLabel lblNewLabel_4 = new JLabel("<HTML><U>"+ nombreUsuarioAdmin.toString() + "</U></HTML>");
+	    lblNewLabel_4.setForeground(new Color(94, 92, 100));
 	    lblNewLabel_4.setFont(new Font("Dialog", Font.BOLD | Font.ITALIC, 24));
 	    lblNewLabel_4.setHorizontalAlignment(SwingConstants.CENTER);
 	    lblNewLabel_4.setBounds(440, 235, 156, 45);
@@ -294,3 +292,4 @@ public class MenuUsuario extends JFrame {
     	return nameTitle;
     }
 }
+

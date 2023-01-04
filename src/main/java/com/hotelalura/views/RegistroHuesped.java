@@ -132,7 +132,6 @@ public class RegistroHuesped extends JFrame {
 		btnAtras.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				
 //
 //  --------->   AL RETORNAR CIERRA Y DESTRUYE EL POOL CREADO.
 //				
@@ -363,7 +362,7 @@ public class RegistroHuesped extends JFrame {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 //
-//	------->     GUARDA EL REGISTRO DE 'Reserva' y 'Huesped'
+//	------->   GUARDA EL REGISTRO DE 'Reserva' y 'Huesped'
 //								
 //				System.out.println("GUARDAR");
 
@@ -409,12 +408,7 @@ public class RegistroHuesped extends JFrame {
 								txtNreserva.setText(idReserva.toString());
 	
 								JOptionPane.showMessageDialog(null, "Reserva registrada exitosamente.");
-								
-								
-//					            MenuUsuario menu = new MenuUsuario();
-//					            menu.setVisible(true);
-//								
-//								dispose();
+
 							}
 							
 						} catch (Exception err) {
@@ -462,12 +456,15 @@ public class RegistroHuesped extends JFrame {
 		
 		JPanel btnexit = new JPanel();
 		btnexit.setBounds(857, 0, 53, 36);
-		contentPane.add(btnexit);
 		btnexit.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				MenuPrincipal principal = new MenuPrincipal();
-				principal.setVisible(true);
+				
+				huespedController.closeAndDestroy();
+				controllerReserva.closeAndDestroy();
+				
+				MenuUsuario menuUsuario = new MenuUsuario(funcionario);
+				menuUsuario.setVisible(true);
 				dispose();
 			}
 			@Override
@@ -490,8 +487,11 @@ public class RegistroHuesped extends JFrame {
 		labelExit.setHorizontalAlignment(SwingConstants.CENTER);
 		labelExit.setForeground(SystemColor.black);
 		labelExit.setFont(new Font("Roboto", Font.PLAIN, 18));
+		header.add(btnexit);
 		
-		JLabel lblVolverMenu = new JLabel("Menu Principal");
+		
+		
+		JLabel lblVolverMenu = new JLabel("Menú Principal");
 		lblVolverMenu.setBounds(560, 573, 130, 22);
 		contentPane.add(lblVolverMenu);
 		lblVolverMenu.setFont(new Font("Roboto", Font.PLAIN, 18));

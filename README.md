@@ -17,7 +17,10 @@ Escrito en Java, utilizando Java Swing para entorno GUI, base de datos MySQL par
 ![Challenge 6 IMG](https://img.youtube.com/vi/4wzjR7SQux4/hqdefault.jpg "Challenge 6")
 
 <p align="center">
-	[URL](https://youtu.be/4wzjR7SQux4)
+	<img src="https://img.youtube.com/vi/4wzjR7SQux4/hqdefault.jpg" alt="Challenge 6"/>
+	 <video width="320" height="240" controls>
+		<source src="https://youtu.be/4wzjR7SQux4" type="video/mp4">
+	</video> 
 </p>
 
 

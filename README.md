@@ -15,8 +15,8 @@ Escrito en Java, utilizando Java Swing para entorno GUI, base de datos MySQL par
 
 
 <p align="center">
-
-	[![Challenge 6 IMG](https://img.youtube.com/vi/4wzjR7SQux4/hqdefault.jpg "Challenge 6")](https://youtu.be/4wzjR7SQux4)
+	![Challenge 6 IMG](https://img.youtube.com/vi/4wzjR7SQux4/hqdefault.jpg "Challenge 6")
+	[URL](https://youtu.be/4wzjR7SQux4)
 </p>
 
 

@@ -17,7 +17,9 @@ Escrito en Java, utilizando Java Swing para entorno GUI, base de datos MySQL par
 
 
 <p align="center">
-	<iframe width="420" height="315" src="https://youtu.be/4wzjR7SQux4"></iframe> 
+	<a href="https://youtu.be/4wzjR7SQux4" target="_blank" >
+			<img src="https://img.youtube.com/vi/4wzjR7SQux4/hqdefault.jpg" alt="Challenge 6"/>
+	</a>
 </p>
 
 

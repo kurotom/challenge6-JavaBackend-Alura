@@ -15,8 +15,10 @@ Escrito en Java, utilizando Java Swing para entorno GUI, base de datos MySQL par
 
 
 <p align="center">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/4wzjR7SQux4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	[![Challenge 6 IMG](http://img.youtube.com/vi/https://www.youtube.com/embed/4wzjR7SQux4/0.jpg)](https://www.youtube.com/embed/4wzjR7SQux4 "Challenge 6")
 </p>
+
+
 
 
 > Ejercicio desafío 6 de la formación Java Orientado a Objetos del Programa Oracle ONE - Alura Latam.

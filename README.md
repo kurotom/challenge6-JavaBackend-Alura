@@ -14,12 +14,10 @@ El proyecto sigue el patrón de diseño MVC.
 Escrito en Java, utilizando Java Swing para entorno GUI, base de datos MySQL para almacenar los datos manejados.
 
 
-	
+
 
 <p align="center">
-	 <video width="320" height="240" controls>
-		<source src="https://youtu.be/4wzjR7SQux4" type="video/mp4">
-	</video> 
+	<iframe width="420" height="315" src="https://youtu.be/4wzjR7SQux4"></iframe> 
 </p>
 
 
